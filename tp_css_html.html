@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Exercice 1  -->
+    <title>Ma première page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tp_css_html.css">
+</head>
+<body>
+    <!-- Exercices de 2 à 5 -->
+    Ma première page avec du texte (sans style)
+    <h1>Ceci est un grand titre</h1>
+    <h2>Ceci est un titre plus petit</h2>
+    <p>Ceci est un paragraphe</p>
+    <a href="https://www.isep.fr">lien vers isep</a>
+    <p><a href="page2.html">lien vers la page 2</a></p>
+    <p>Voici le logo de l'ISEP :</p>
+    <img src="isep.png" alt="isep" width="400" height="150" />
+    <p>Les parcours de formations à l'ISEP sont :</p>
+    <ul>
+        <li>Les parcours du domaine informatique :</li>
+        <ol>
+            <li>Le parcours Ingénieur Logiciel</li>
+            <li>Le parcours architecte des systèmes d'informations</li>
+            <li>Le parcours sécurité numérique et réseaux</li>
+        </ol>
+        <li>Les parcours du domaine Electronique et Telecom :</li>
+        <ol>
+            <li>Le parcours systèmes embarqués</li>
+            <li>Le parcours objets et services connectés</li>
+        </ol>
+        <li>Les autres domaines :</li>
+        <ol>
+            <li>Le parcours numérique et santé</li>
+            <li>Le parcours intelligence des données</li>
+        </ol>
+    </ul>
+
+    <!-- Mon Profil -->
+    <form>
+        <h2>Votre profil :</h2>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom"><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom"><br><br>
+        <label for="login">Login :</label>
+        <input type="text" id="login" name="login"><br><br>
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password"><br><br>
+    </form>
+
+    <!-- Section Passe-temps -->
+    <form>
+        <h2>Vos passe-temps :</h2>
+        <p>Pratiquez-vous un sport ?</p>
+        <input type="radio" id="sport_oui" name="sport" value="oui">
+        <label for="sport_oui">Oui</label><br>
+        <input type="radio" id="sport_non" name="sport" value="non">
+        <label for="sport_non">Non</label><br><br>
+
+        <p>Si oui, lesquels parmi ceux-là ?</p>
+        <input type="checkbox" id="football" name="sport_type" value="football">
+        <label for="football">Football</label><br>
+        <input type="checkbox" id="golf" name="sport_type" value="golf">
+        <label for="golf">Golf</label><br>
+        <input type="checkbox" id="natation" name="sport_type" value="natation">
+        <label for="natation">Natation</label><br>
+        <input type="checkbox" id="cyclisme" name="sport_type" value="cyclisme">
+        <label for="cyclisme">Cyclisme</label><br><br>
+
+        <p>Aimez-vous lire ?</p>
+        <input type="radio" id="lire_oui" name="lire" value="oui">
+        <label for="lire_oui">Oui</label><br>
+        <input type="radio" id="lire_non" name="lire" value="non">
+        <label for="lire_non">Non</label><br><br>
+        <p>Si oui, quel livre êtes-vous en train de lire ?</p>
+        <textarea id="livre" name="livre" rows="4" cols="30">Informations Supplémentaires</textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Nettoyer">
+    </form>
+
+    <!-- Tableaux -->
+    <table border="1" style="border-color: red">
+        <caption>Quelques professeurs de l'ISEP</caption>
+        <tr>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Adresse mail</th>
+        </tr>
+        <tr>
+            <td>Nour</td>
+            <td>El Madhoun</td>
+            <td>nour.el-madhoun@isep.fr</td>
+        </tr>
+        <tr>
+            <td>Hervé</td>
+            <td>Allanic</td>
+            <td>herve.allanic@isep.fr</td>
+        </tr>
+        <tr>
+            <td>Zakia</td>
+            <td>Kazi</td>
+            <td>zakia.kazi@isep.fr</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Exercice 6 -->
+    <h2>Quelques professeurs de l'ISEP</h2>
+    <table>
+        <tr class="titres">
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Adresse mail</th>
+        </tr>
+        <tr class="ligne1">
+            <td>Omar</td>
+            <td>Al Hammal</td>
+            <td>alhammal.isep@gmail.com</td>
+        </tr>
+        <tr class="ligne2">
+            <td>Kévin</td>
+            <td>Malleron</td>
+            <td>kevin.malleron@isep.fr</td>
+        </tr>
+        <tr class="ligne3">
+            <td>Zakia</td>
+            <td>Kazi-Aoul</td>
+            <td>zakia.kazi@isep.fr</td>
+        </tr>
+    </table>
+
+    <!-- Section Logo -->
+    <h3>Voici le logo de l'ISEP :</h3>
+    <img src="isep.png" alt="logo ISEP" class="image">
+
+    <div class="titre">Localisation de l'ISEP</div>
+    <div class="issy">
+        <h3>Issy-les-Moulineaux</h3>
+        <p>
+            Le bâtiment Lorette (NDL) se situe au 10 rue de Vanves 92130 Issy-les-Moulineaux.
+            À 5 minutes du métro Corentin Celton, l'ISEP est au cœur de la Ville Numérique,
+            aux côtés de Microsoft, Orange, Cisco, Cap Gemini et de chaînes de télévision
+            (TF1, France Médias Monde)...
+        </p>
+    </div>
+    <div class="paris">
+        <h3>Paris 6ème arrondissement</h3>
+        <p>
+            Le bâtiment Notre Dame des Champs (NDC) se situe au 28 rue Notre Dame des Champs 75006 Paris.
+            C’est ce bâtiment qui accueille la majorité des bureaux des associations étudiantes.
+            Cette situation permet de profiter pleinement de la vie parisienne, l'école étant proche
+            du Jardin du Luxembourg, de Saint-Germain des Prés...
+        </p>
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="galerie">
+        <a href="https://fr.wikipedia.org/wiki/Mario" target="_blank">
+            <img src="mario.jpeg" alt="Mario">
+        </a>
+        <div class="description">Mario</div>
+    </div>
+    <div class="galerie">
+        <a href="https://fr.wikipedia.org/wiki/Luigi" target="_blank">
+            <img src="Luigi.jpeg" alt="Luigi">
+        </a>
+        <div class="description">Luigi</div>
+    </div>
+    <div class="galerie">
+        <a href="https://fr.wikipedia.org/wiki/Yoshi" target="_blank">
+            <img src="yoshi.jpeg" alt="Yoshi">
+        </a>
+        <div class="description">Yoshi</div>
+    </div>
+    <div class="galerie">
+        <a href="https://fr.wikipedia.org/wiki/Princesse_Peach" target="_blank">
+            <img src="princess.jpeg" alt="Princesse Peach">
+        </a>
+        <div class="description">Princesse Peach</div>
+    </div>
+    <div class="galerie">
+        <a href="https://fr.wikipedia.org/wiki/Wario" target="_blank">
+            <img src="wario.jpeg" alt="Wario">
+        </a>
+        <div class="description">Wario</div>
+    </div>
+</body>
+</html>
